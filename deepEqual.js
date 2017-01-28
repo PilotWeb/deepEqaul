@@ -2,8 +2,7 @@ function deepEqual(obj1, obj2){
  if(typeof obj1 == 'object' && typeof obj2 == 'object' && obj1 !==null && obj2!==null){
   for(var value in obj2){
     console.log(value);
-    if(!(value in obj1)) return false;
-    
+    if(!(value in obj1)) return false;    
   }
   for(var value in obj1){
      console.log(value);
